@@ -1,3 +1,6 @@
+# Первая лабораторная работа по ТМП
+
+```plantuml
 @startuml
 left to right direction
 skinparam packageStyle rect
@@ -7,7 +10,8 @@ rectangle ATM {
   client-- (check cash)
   client-- (withdraw cash)
   client-- (put money on the card)
-  (withdraw cash) -> (check cash) : extends
+  (withdraw cash) <- (check cash) : extends
   bank -- (check rest)
 }
 @enduml
+```
